@@ -9,7 +9,7 @@ const page = () => {
       title: "helo",
       desc: "kush in "
     }
-  ])           
+  ])
   const handlesubmit=(e)=>{
     e.preventDefault()
     setMainTask([...mainTask, {title, desc}])
@@ -25,7 +25,6 @@ const page = () => {
     setMainTask(copytask);
   }
   let renderTask = <h2> No Task Available</h2>
-
   if(mainTask.length > 0)
   {
 
@@ -42,7 +41,6 @@ const page = () => {
       
   })
   } 
-  
   return (
     <>
       <div className='bg-black bg-center text-white text-center text-4xl font-bold p-10 '>
@@ -57,7 +55,7 @@ const page = () => {
         onChange={(e)=>{  
         settitle(e.target.value)
         }}
-        />
+        />      
       <input
         className='text-2xl boorder-2 border-zinc-300 border-4 m-4 px-4 py-2 '   
         placeholder='Enter the Description here....'
@@ -78,5 +76,4 @@ const page = () => {
     </>
   )
 }
-
 export default page
