@@ -10,7 +10,6 @@ const page = () => {
       desc: "kush in "
     }
   ])
-  
   const handlesubmit=(e)=>{
     e.preventDefault()
     setMainTask([...mainTask, {title, desc}])
